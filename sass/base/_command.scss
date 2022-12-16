@@ -6,10 +6,3 @@ body {
   color: var(--primary-text-color);
   background: var(--background-doc);
 }
-
-/* top line bg */
-.web {
-  @include font(700,26px,1.1923, null);
-  font-style: normal;
-  color: var(--accent-color);
-}
