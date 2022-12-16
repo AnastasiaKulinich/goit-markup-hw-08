@@ -1,6 +1,10 @@
 .examples-img {
-  padding-top: 94px;
-  padding-bottom: 94px;
+ @extend %section;
+ text-align: center;
+	width: 100%;
+  @include desktop{
+    display: flex;
+  }
 }
 .examples-img__list {
   list-style: none;
