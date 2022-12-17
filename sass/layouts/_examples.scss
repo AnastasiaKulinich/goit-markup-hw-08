@@ -3,19 +3,21 @@
  text-align: center;
 	width: 100%;
   @include desktop{
-    display: flex;
+    display: block;
   }
 }
 .examples-img__list {
   list-style: none;
   display: flex;
   position: relative;
+  justify-content: center;
   gap: 30px;
   padding: 0;
   margin: 0;
 }
 .examples-img__label {
   position: relative;
+  list-style: none;
 }
 .examples-img__text {
   @include font(700, 14px, 1.428, 0.03em);

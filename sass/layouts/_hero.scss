@@ -5,7 +5,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: var(--gradient),
-    url(../../img/Header\ mobile.jpg);
+    url(../../img/Header\ mobile\ 1x\ .jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -14,14 +14,14 @@
   margin-right: auto;
   @include retina {
   background-image: var(--gradient),
-    url(../../img/Header\ mobile\ 2x.jpg);
+    url(../../img/header\ mobile\ 2x\ .jpg);
 }
   @include mobile {
     background-image: var(--gradient),
-      url(../../img/Header\ tablet.jpg);
+      url(../../img/Header\ tablet\ 1x\ \ .jpg);
     @include retina {
   background-image: var(--gradient),
-      url(../../img/Header\ tablet\ 2x.jpg);
+      url(../../img/Header\ tablet\ 2x\ \ .jpg);
 }
   }
   @include tablet {
@@ -37,19 +37,23 @@
       url(../img/hero.JPG);
   }
 }
-
 .hero__title {
   @include font(900, 26px, 1.6, 0.06em);
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  @include mobile;
-   @include tablet;
+  @include mobile{
+  }
+   @include tablet{
+   }
+   @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
-
-
 .hero__header-btn {
   @include font(700, 16px, 1.875, 0.06em);
   font-family: inherit;
