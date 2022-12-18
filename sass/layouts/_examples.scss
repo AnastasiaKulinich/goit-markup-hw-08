@@ -1,10 +1,11 @@
 .examples-img {
- @extend %section;
  text-align: center;
 	width: 100%;
-  @include desktop{
-    display: block;
-  }
+	padding-bottom: 94px;
+  display: none;
+	@include desktop {
+	display: block;
+	}
 }
 .examples-img__list {
   list-style: none;

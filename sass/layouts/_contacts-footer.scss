@@ -1,26 +1,21 @@
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
 .social-container {
   margin-left: 70px;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 480px) {
+ @include mobile {
   margin-bottom: 60px;
   }
 }
 .footer-text {
   @include font(700, 14px, 1.428, 0.03em);
   display: flex;
-  justify-content: center;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  margin-bottom: 20px; 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    display: inline-block;
-  }
+  margin-bottom: 20px;
+  @include desktop  {
+	display: inline-block;
+	}
 }
 .footer-social-list {
   display: flex;

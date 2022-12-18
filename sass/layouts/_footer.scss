@@ -3,46 +3,70 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.container-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 93px;
+  align-items: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .logo-footer {
   @include font(700, 26px, 1.19, nulle);
   font-family: "Raleway", sans-serif;
   color: var(--primary-white-color);
-  display: inline-block;
-  margin: 0 auto;
+  display: block;
+  text-align: center;
   margin-bottom: 20px;
+  @include desktop {
+    display: inline-block;
+  }
 }
-.contacts-adress{
+.contacts-adress {
   display: block;
   color: var(--primary-white-color);
   font-style: normal;
   line-height: 2;
   text-decoration: none;
-   @media screen and (min-width: 480px) {
+  @include mobile {
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: left;
   }
 }
 .contacts-item {
   margin-bottom: 12px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 9px;
   }
 }
 .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
   font-style: normal;
   list-style: none;
   background: var(--section-footer-background);
-  margin: 0;
-  padding: 0;
 }
+
 .footer-nav-address {
   line-height: 1.7142;
   list-style: none;
@@ -58,7 +82,7 @@
 .footer-nav-link {
   display: block;
   text-decoration: none;
-   font-style: normal;
+  font-style: normal;
   line-height: 1.7142;
   color: var(--footer-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,8 +90,8 @@
   &:focus {
     color: var(--accent-color);
   }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
+  @include desktop {
+    display: inline-block;
   }
 }
 img {

@@ -1,5 +1,6 @@
 .about {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .about__container {
   display: flex;
@@ -35,10 +36,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -59,10 +60,10 @@
   margin: 0;
   padding-bottom: 10px;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align: left;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: left;
   }
 }
