@@ -1,18 +1,18 @@
 .social-container {
-  margin-left: 70px;
   align-items: center;
   justify-content: center;
- @include mobile {
+  @include mobile {
   margin-bottom: 60px;
+  text-align: center;
   }
 }
 .footer-text {
   @include font(700, 14px, 1.428, 0.03em);
-  display: flex;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+  text-align: center;
   @include desktop  {
 	display: inline-block;
 	}
@@ -20,6 +20,7 @@
 .footer-social-list {
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 10px;
 }
 .footer-social-item {

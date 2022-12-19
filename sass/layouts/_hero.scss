@@ -4,30 +4,30 @@
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: var(--gradient), url(../../img/Header\ mobile\ 1x\ .jpg);
+  background-image: var(--gradient), url(../img/hero.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
   @include retina {
-    background-image: var(--gradient), url(../../img/header\ mobile\ 2x\ .jpg);
+    background-image: var(--gradient), url(../img/header\ mobile\ 2x\ .jpg);
   }
   @include mobile {
-    background-image: var(--gradient), url(../../img/Header\ tablet\ 1x\ \ .jpg);
+    background-image: var(--gradient), url(../img/Header\ tablet\ 1x\ \ .jpg);
     @include retina {
       background-image: var(--gradient),
-        url(../../img/Header\ tablet\ 2x\ \ .jpg);
+        url(../img/Header\ tablet\ 2x\ \ .jpg);
     }
   }
   @include tablet {
-    background-image: var(--gradient), url(../../img/hero.JPG);
+    background-image: var(--gradient), url(../img/hero.JPG);
     @include retina {
-      background-image: var(--gradient), url(../../img/Img\ desktop\ 2x.jpg);
+      background-image: var(--gradient), url(../img/Img\ desktop\ 2x.jpg);
     }
   }
   @include desktop {
-    background-image: var(--gradient), url(../../img/hero.JPG);
+    background-image: var(--gradient), url(../img/hero.JPG);
   }
 }
 .hero__title {
@@ -35,7 +35,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   @include mobile {
