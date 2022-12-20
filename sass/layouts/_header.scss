@@ -4,21 +4,20 @@
   border-bottom: 1px solid #ececec;
 }
 .page-header__container {
-  @extend %list;
-  display: flex;
   align-items: center;
+  display:flex;
   height: 80px;
   justify-content: space-between;
+  margin: auto;
 }
 .web {
   color: var(--accent-color);
 }
 .page-header__navigation {
   display: flex;
-  margin-right: auto;
   align-items: center;
+  bottom: -1px;
   @media screen and (min-width: 768px) {
-  display: flex;
   }
 }
 .page-header__logo-header {
@@ -26,7 +25,6 @@
   font-family: "Raleway", sans-serif;
   font-style: normal;
   color: var(--logo-header-color);
-  margin-right: 93px;
   @include mobile {
     font-size: 24px;
     line-height: 1.17;
@@ -34,12 +32,12 @@
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
-    margin: auto;
+
   }
   @include desktop {
     font-size: 26px;
     line-height: 1.19;
-    margin: auto;
+     margin: auto;
   }
 }
 .menu {

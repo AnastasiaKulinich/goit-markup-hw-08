@@ -55,7 +55,7 @@ img {
   padding: 0px;
 }
 
-.project-top-text, .submit-btn, .checkbox-text span, .modal-close, .subscribe-btn, .footer-social-link, .client-link, .team-icons-link, .examples-img__text, .about-text__about-icon, .adress-header__link, .page-header__container {
+.project-top-text, .submit-btn, .checkbox-text span, .modal-close, .subscribe-btn, .footer-social-link, .client-link, .team-icons-link, .examples-img__text, .about-text__about-icon, .adress-header__link {
   display: flex;
   align-items: center;
 }
@@ -79,10 +79,10 @@ body {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: 0;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -107,10 +107,11 @@ body {
 }
 
 .page-header__container {
-  display: flex;
   align-items: center;
+  display: flex;
   height: 80px;
   justify-content: space-between;
+  margin: auto;
 }
 
 .web {
@@ -119,15 +120,9 @@ body {
 
 .page-header__navigation {
   display: flex;
-  margin-right: auto;
   align-items: center;
+  bottom: -1px;
 }
-@media screen and (min-width: 768px) {
-  .page-header__navigation {
-    display: flex;
-  }
-}
-
 .page-header__logo-header {
   font-weight: 700;
   font-size: 26px;
@@ -136,7 +131,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   color: var(--logo-header-color);
-  margin-right: 93px;
 }
 @media screen and (min-width: 480px) {
   .page-header__logo-header {
@@ -148,7 +142,6 @@ body {
   .page-header__logo-header {
     font-size: 24px;
     line-height: 1.17;
-    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -575,6 +568,7 @@ body {
   margin: 0;
   padding-bottom: 10px;
   text-align: center;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .about__about-title {
@@ -851,7 +845,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo-footer {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -994,28 +988,22 @@ img {
   fill: currentColor;
 }
 
-.footer-form {
-  margin-left: 93px;
-}
 @media screen and (min-width: 320px) {
   .footer-form {
     width: 100%;
     margin-top: 0px;
-    flex-wrap: wrap;
     margin-left: 0px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-form {
     margin-top: 0;
-    margin-left: 159px;
-    margin-right: 159px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-left: 93px;
     margin-right: 0px;
+    display: flex;
   }
 }
 
@@ -1048,6 +1036,7 @@ img {
   margin-bottom: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-right: 12px;
 }
 .input-footer::-moz-placeholder {
   font-size: 16px;
@@ -1073,6 +1062,7 @@ img {
 @media screen and (min-width: 768px) {
   .input-footer {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 }
