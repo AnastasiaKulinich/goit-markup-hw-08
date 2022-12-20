@@ -1023,6 +1023,10 @@ img {
   }
 }
 
+.input-mobile {
+  font-size: 12px;
+}
+
 .input-footer {
   display: flex;
   width: 100%;
