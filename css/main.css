@@ -102,6 +102,11 @@ body {
   justify-content: space-between;
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .page-header__container {
+    height: 80px;
+  }
+}
 
 .web {
   color: var(--accent-color);
@@ -109,7 +114,7 @@ body {
 
 .page-header__navigation {
   align-items: center;
-  bottom: 1px;
+  bottom: -1px;
 }
 @media screen and (min-width: 1200px) {
   .page-header__navigation {
@@ -201,6 +206,11 @@ body {
   transition: opasity 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .menu__link--current::after {
+    bottom: 1px;
+  }
 }
 
 .adress-header {
@@ -926,6 +936,11 @@ body {
 }
 .footer-nav-address:hover, .footer-nav-address:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav-address:hover, .footer-nav-address:focus {
+    text-align: left;
+  }
 }
 
 .footer-nav-link {

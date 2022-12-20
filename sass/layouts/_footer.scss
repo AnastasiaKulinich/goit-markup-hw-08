@@ -80,6 +80,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    @include desktop{
+      text-align: left;
+    }
   }
 }
 .footer-nav-link {
