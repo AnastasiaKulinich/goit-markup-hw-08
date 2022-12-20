@@ -1,5 +1,4 @@
 .social-container {
-  align-items: center;
   justify-content: center;
   @include mobile {
   margin-bottom: 60px;
@@ -8,11 +7,9 @@
 }
 .footer-text {
   @include font(700, 14px, 1.428, 0.03em);
-  text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-  text-align: center;
   @include desktop  {
 	display: inline-block;
 	}

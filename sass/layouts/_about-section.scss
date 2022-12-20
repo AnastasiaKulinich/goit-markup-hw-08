@@ -1,15 +1,10 @@
 .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .about__container {
   display: flex;
   flex-wrap: wrap;
-  @include desktop {
-  margin: 0 auto; 
-  padding-top: 94px;
-  padding-bottom: 94px;
-  }
 }
 .visually-hidden {
   position: absolute;
