@@ -3,7 +3,10 @@
   padding-bottom: 60px;
   @include desktop {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
+    padding-top: 94px;
+    padding-bottom: 94px;
+
   }
 }
 .customers-list {

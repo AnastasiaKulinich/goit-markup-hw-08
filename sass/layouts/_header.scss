@@ -5,7 +5,7 @@
 }
 .page-header__container {
   align-items: center;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -16,7 +16,7 @@
   align-items: center;
   bottom: 1px;
   @media screen and (min-width: 1200px) {
-  bottom: -1px;
+    bottom: -1px;
   }
 }
 .page-header__logo-header {
@@ -31,12 +31,11 @@
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
-
   }
   @include desktop {
     font-size: 26px;
     line-height: 1.19;
-     margin: auto;
+    margin: 0 93px 0 0;
   }
 }
 .menu {
@@ -90,15 +89,17 @@
   display: none;
   gap: 30px;
   @include tablet {
-  display: block;
+    display: block;
   }
   @include desktop {
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: auto;
-    margin-right: auto;
   }
+}
+.adress-header__item {
+  margin: 10px;
 }
 .adress-header__link {
   @include font(500, 14px, 1.428, 0.02em);

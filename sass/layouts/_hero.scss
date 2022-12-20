@@ -1,9 +1,10 @@
 .hero {
   background: var(--section-hero-background);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: var(--gradient), url(../img/hero.JPG);
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,8 +16,7 @@
   @include mobile {
     background-image: var(--gradient), url(../img/Header\ tablet\ 1x\ \ .jpg);
     @include retina {
-      background-image: var(--gradient),
-        url(../img/Header\ tablet\ 2x\ \ .jpg);
+      background-image: var(--gradient), url(../img/Header\ tablet\ 2x\ \ .jpg);
     }
   }
   @include tablet {
@@ -27,6 +27,8 @@
   }
   @include desktop {
     background-image: var(--gradient), url(../img/hero.JPG);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero__title {
@@ -49,7 +51,9 @@
   @include desktop {
     max-width: 696px;
     font-size: 44px;
-   line-height: 1.3;
+    line-height: 1.3;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 .hero__header-btn {
